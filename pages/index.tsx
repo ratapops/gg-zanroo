@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                 </thead>
                 <tbody>
                   {testData.map((data, i) => (
-                    <tr className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                    <tr key={i} className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                         {i + 1}
                       </td>
