@@ -20,6 +20,7 @@ export default function AddUserForm({
         focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
       "
             onChange={handleAddFormChange}
+            //@ts-ignore
             required="required"
           />
         </label>
@@ -38,6 +39,7 @@ export default function AddUserForm({
         focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
       "
             onChange={handleAddFormChange}
+            //@ts-ignore
             required="required"
           />
         </label>
@@ -56,6 +58,7 @@ export default function AddUserForm({
         focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
       "
             onChange={handleAddFormChange}
+            //@ts-ignore
             required="required"
           />
         </label>
