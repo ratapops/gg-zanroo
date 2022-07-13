@@ -5,17 +5,21 @@ import ReadOnlyRow from "../components/readOnlyRow";
 import EditableRow from "../components/editableRow";
 import AddUserForm from "../components/addUserForm";
 
+/* eslint-disable */
+
 const tHead = ["Name", "Age", "Nickname", "Action"];
 
 export default function Home() {
   const [clName, setAddUserClass] = useState("hidden");
   const [users, setUsers] = useState([]);
   const [addFormData, setAddFormData] = useState({
+    id: "",
     name: "",
     age: "",
     nickname: "",
   });
   const [editFormData, setEditFormData] = useState({
+    id: "",
     name: "",
     age: "",
     nickname: "",
@@ -23,7 +27,7 @@ export default function Home() {
 
   const [editUserId, setEditUserId] = useState(null);
 
-  
+
   useEffect(() => {
     const localData: any = handleLocalData('load')
     if (localData) {
@@ -130,6 +134,7 @@ export default function Home() {
     setEditUserId(user.id);
 
     const formVal = {
+      id: user.id,
       name: user.name,
       age: user.age,
       nickname: user.nickname,
